@@ -295,7 +295,7 @@ geoConfig: {
     border: '1px solid #b1d780 !important',
     hover: {
         background: '#b1d780 !important',
-        color: '#ffffff !important',
+        color: '#333333 !important',
         transform: 'translateY(-1px) !important'
     }
         },
@@ -325,7 +325,7 @@ geoConfig: {
         save: {
         background: '#f8f9fa !important',
         color: '#333333 !important',
-        border: '1px solid #b1d780 !important',
+        border: '1px solid #e0e0e0 !important',
         hover: {
             background: '#b1d780 !important',
             color: '#333333 !important',
