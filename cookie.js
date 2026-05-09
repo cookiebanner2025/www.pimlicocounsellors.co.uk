@@ -82,16 +82,16 @@ function isEEAVisitor() {
 
 const config = {
     // Domain restriction
-    allowedDomains: [],
+    allowedDomains: ['www.pimlicocounsellors.co.uk'],
     
     // Privacy policy URL (configurable)
-    privacyPolicyUrl: 'https://yourdomain.com/privacy-policy', // Add your full privacy policy URL here
+    privacyPolicyUrl: 'https://www.pimlicocounsellors.co.uk/privacy-policy', // Add your full privacy policy URL here
 
 
 
     // NEW: Cookie Banner Trigger Configuration
     bannerTriggers: {
-        enabled: true, // Set to true to enable clicking links to open banner
+        enabled: false, // Set to true to enable clicking links to open banner
         triggerText: "Quick Links", // The text that will trigger the banner
         triggerClass: "cookie-banners-trigger", // OR use a CSS class instead
         triggerId: "cookie-banner-trigger" // OR use an ID instead
@@ -169,7 +169,7 @@ clarityConfig: {
         
         // NEW: Restrict user interaction when banner is visible
         restrictInteraction: {
-            enabled: true,          // Turn this ON/OFF
+            enabled: false,          // Turn this ON/OFF
             preventScroll: false,    // Turn scroll blocking ON/OFF
             preventClick: true,     // Turn click blocking ON/OFF
             blurBackground: true,   // Turn blur effect ON/OFF
@@ -283,18 +283,18 @@ geoConfig: {
     
     // Button styling
     buttonStyle: {
-    borderRadius: '8px !important',
+    borderRadius: '20px !important',
     padding: '12px 20px !important',
     fontWeight: '600 !important',
     fontSize: '14px !important',
     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important',
         
        accept: {
-    background: '#1177d0 !important',
+    background: '#b1d780 !important',
     color: '#ffffff !important',
     border: '1px solid #1177d0 !important',
     hover: {
-        background: '#1177d0 !important',
+        background: '#b1d780 !important',
         color: '#ffffff !important',
         transform: 'translateY(-1px) !important'
     }
@@ -305,7 +305,7 @@ geoConfig: {
         color: '#333333 !important',
         border: '1px solid #e0e0e0 !important',
         hover: {
-            background: '#f8f9fa !important',
+            background: '#b1d780 !important',
             color: '#333333 !important',
             transform: 'translateY(-1px) !important'
         }
@@ -316,7 +316,7 @@ geoConfig: {
         color: '#333333 !important',
         border: '1px solid #e0e0e0 !important',
         hover: {
-            background: '#f0f2f5 !important',
+            background: '#b1d780 !important',
             color: '#333333 !important',
             transform: 'translateY(-1px) !important'
         }
@@ -859,8 +859,8 @@ const cookieDatabase = {
 // Language translations (keeping only en and fr as requested)
 const translations = {
     en: {
-        title: "We value your privacy",
-        description: "We use cookies to improve your browsing experience, provide personalized ads or content, and analyze our traffic. By clicking \"Accept All,\" you consent to the use of cookies.",
+        title: "A respectful approach to privacy",
+        description: "We use cookies to support the smooth functioning of this website, understand how it is used, and occasionally tailor content or advertising. By clicking “Accept All”, you consent to the use of cookies.",
         privacy: "Privacy Policy",
         customize: "Adjust",
         reject: "Reject all",
@@ -2678,6 +2678,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             `border: ${config.bannerStyle.border.width} ${config.bannerStyle.border.style} ${config.bannerStyle.border.color};` : 
             'border: none;'}
         overflow: hidden;
+        border-radius:30px;
     }
 
 
@@ -2964,6 +2965,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
+        display: none;
     }
 
     /* Toggle Switch Styles */
@@ -3039,6 +3041,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         border-radius: 8px;
         overflow: hidden;
         transition: all 0.3s ease;
+        display: none;
     }
 
     .cookie-details-container:hover {
