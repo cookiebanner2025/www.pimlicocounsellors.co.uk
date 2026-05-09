@@ -292,7 +292,7 @@ geoConfig: {
        accept: {
     background: '#b1d780 !important',
     color: '#ffffff !important',
-    border: '1px solid #1177d0 !important',
+    border: '1px solid #b1d780 !important',
     hover: {
         background: '#b1d780 !important',
         color: '#ffffff !important',
@@ -323,11 +323,11 @@ geoConfig: {
         },
         
         save: {
-        background: '#f8f9fa !important',
+        background: '#b1d780 !important',
         color: '#333333 !important',
-        border: '1px solid #e0e0e0 !important',
+        border: '1px solid #b1d780 !important',
         hover: {
-            background: '#f8f9fa !important',
+            background: '#b1d780 !important',
             color: '#333333 !important',
             transform: 'translateY(-1px) !important'
         }
