@@ -291,7 +291,7 @@ geoConfig: {
         
        accept: {
     background: '#b1d780 !important',
-    color: '#ffffff !important',
+    color: '#333333 !important',
     border: '1px solid #b1d780 !important',
     hover: {
         background: '#b1d780 !important',
@@ -323,7 +323,7 @@ geoConfig: {
         },
         
         save: {
-        background: '#b1d780 !important',
+        background: '#f8f9fa !important',
         color: '#333333 !important',
         border: '1px solid #b1d780 !important',
         hover: {
